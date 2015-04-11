@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/image"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_marginTop="18dp"
+        android:id="@+id/linearLayoutTitle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:id="@+id/title_textView"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scrivere titolo"
+            android:textSize="15sp"
+            android:id="@+id/textView_scrivereTitolo"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutYear"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_below="@+id/linearLayoutTitle"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year: "
+            android:id="@+id/year_textView"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scrivere anno"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:id="@+id/textView_scrivereAnno"
+            />
+        </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/linearLayoutRating"
+       android:layout_toRightOf="@id/imageView"
+       android:layout_toEndOf="@id/imageView"
+       android:layout_below="@+id/linearLayoutYear"
+       android:layout_marginTop="5dp"
+       android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Rating: "
+           android:textStyle="bold"
+           android:textSize="15dp"
+           android:id="@+id/rating_textView"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="scrivere rating"
+           android:layout_marginRight="10dp"
+           android:layout_marginEnd="10dp"
+           android:textSize="15sp"
+           android:id="@+id/textView_scrivereRating"
+           />
+
+       </LinearLayout>
+
+
+
+</RelativeLayout>
